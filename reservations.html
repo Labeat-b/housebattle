@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New York Budapest Cafe Reservations</title>
+  <link rel="stylesheet" href="reservations.css">
+  <link rel="icon"  href="cc.jpg">
+</head>
+<body>
+  <div class="container">
+    <h1>Make a Reservation</h1>
+    <form id="reservationForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+
+      <label for="phone">Phone(Optional):</label>
+      <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="Format: +383-123-123-123">
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" required>
+
+      <label for="time">Time:</label>
+      <input type="time" id="time" required>
+      <label for="guests">Number of Guests:</label>
+      <input type="number" id="guests" min="1" max="10" required>
+
+      <button type="submit">Submit Reservation</button>
+    </form>
+    <p id="confirmation"></p>
+    <ul id="links">
+      <li><a href="../Group-Project1/index.html">Home</a></li>
+      <li><a href="../Group-Project1/contacts.html">Contact</a></li>
+      <li><a href="../Group-Project1/menu.html">Menu</a></li>
+      <li><a href="../Group-Project1/events.html">Events</a></li>
+      <li><a href="../Group-Project1/aboutus.html">AboutUs</a></li>
+    </ul>
+  </div>
+
+  <script src="reservations.js"></script>
+</body>
+</html>
